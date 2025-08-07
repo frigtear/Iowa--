@@ -95,7 +95,6 @@ Declaration* Parser::statement(){
 }
 
 Statement* Parser::block(){
-    std::cout << "parsing block" << std::endl;
     std::vector<Declaration*> statements = {};
     while (!(peek().get_type() == TokenType::BracketClose) && !is_at_end()){
         statements.push_back(declaration());

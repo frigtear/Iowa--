@@ -11,8 +11,7 @@ Environment::dynamic_type Environment::get_variable_value(const std::string& nam
         return parent_environment->get_variable_value(name);
     }
     else{
-        throw std::runtime_error(
-        std::string{"Error: variable '"} + name + "' does not exist");
+        //throw std::runtime_error(std::string{"Error: variable '"} + name + "' does not exist");
     }
 }
 

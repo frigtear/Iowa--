@@ -11,8 +11,16 @@ set y = 3;
 
 {
     set x = 3;
-    set y = 3;
     say (x * y);
+    {
+        set y = 5;
+        say (y + 2);
+        {
+            set y = 20;
+            say (y - 5);
+            say( (((y * (y / y)) * ((y / y) * (y / y))) /31415026) );
+        }
+    }
 }
 
 say (x * y);
