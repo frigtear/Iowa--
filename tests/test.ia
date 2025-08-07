@@ -1,0 +1,18 @@
+set hello = (false || true);
+
+set z = false;
+
+say (hello);
+say (z && hello);
+
+
+set x = (5 + (3 + 2));
+set y = 3;
+
+{
+    set x = 3;
+    set y = 3;
+    say (x * y);
+}
+
+say (x * y);
